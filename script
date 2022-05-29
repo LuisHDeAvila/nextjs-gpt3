@@ -1,0 +1,145 @@
+cd src
+    6  ls
+    7  rm index.js 
+    8  ls
+    9  find . | grep css | xargs cat >> styles.css
+   10  ls
+   11  mdkir ../styles
+   12  mkdir ../styles
+   13  mv styles.css ../styles/
+   14  ls
+   15  find . | grep css | xargs rm
+   16  ls
+   17  cd ..
+   18  ls
+   19  rm typescript 
+   20  ls
+   21  mv package.json package.txt
+   22  ls
+   23  npm init -y
+   24  ls
+   25  nano package.json 
+   26  ls
+   27  cat README.md 
+   28  echo " " >>  README.md 
+   29  echo " " >  README.md 
+   30  cat README.md 
+   31  ls
+   32  mkdir pages
+   33  ls
+   34  cd src
+   35  ls
+   36  sudo su
+   37  ls
+   38  find . | grep js | xargs cat | grep -c img
+   39  find . | grep js | xargs cat | grep -c href
+   40  find . | grep js | xargs cat | grep -c "import React from 'react'"
+cd ..
+ls
+    1  sudo ifconfig
+    2  sudo ifconfig wlan0 down
+    3  sudo ifconfig eth0 down
+    4  ls
+    5  cd src
+    6  ls
+    7  rm index.js 
+    8  ls
+    9  find . | grep css | xargs cat >> styles.css
+   10  ls
+   11  mdkir ../styles
+   12  mkdir ../styles
+   13  mv styles.css ../styles/
+   14  ls
+   15  find . | grep css | xargs rm
+   16  ls
+   17  cd ..
+   18  ls
+   19  rm typescript 
+   20  ls
+   21  mv package.json package.txt
+   22  ls
+   23  npm init -y
+   24  ls
+   25  nano package.json 
+   26  ls
+   27  cat README.md 
+   28  echo " " >>  README.md 
+   29  echo " " >  README.md 
+   30  cat README.md 
+   31  ls
+   32  mkdir pages
+   33  ls
+   34  cd src
+   35  ls
+   36  sudo su
+   37  ls
+   38  find . | grep js | xargs cat | grep -c img
+   39  find . | grep js | xargs cat | grep -c href
+   40  find . | grep js | xargs cat | grep -c "import React from 'react'"
+   41  cd ..
+   42  ls
+   43  history
+   44  nano script
+   45  cat script | awk -F" " '{print $2}'
+   46  ls
+   47  cat package.txt 
+   48  nano package.json 
+   49  sudo ifconfig eth0 up
+   50  ls
+   51  cd ..
+   52  7z a responsive2.zip responsive/*
+   53  sudo cp responsive2.zip /mnt
+   54  ls
+   55  rm -r responsive2.zip 
+   56  ls
+   57  cd responsive/
+   58  ls
+   59  sudo apt-get update -y; sudo apt-get install npm nodejs -y;
+   60  npm install react react-dom next
+   61  ls
+   62  cat package.json 
+   63  npm init -y
+   64  cat package.txt 
+   65  nano package.json 
+   66  npm install --dev eslint
+   67* 
+   68  nano package.json 
+   69  ls
+   70  rm -r node_modules/
+   71  rm -r package-lock.json 
+   72  ls
+   73  rm package.txt 
+   74  ls
+   75  cat README.md 
+   76  LS
+   77  ls
+   78  cat styles/
+   79  ls styles/
+   80  cd styles/
+   81  ls
+   82  cat styles.css | sed 's/gpt3/landingpage1/g'
+   83  cat styles.css | sed 's/gpt3/landingpage1/g' >> styles.txt
+   84  ls
+   85  mv styles.txt styles.css
+   86  ls
+   87  cd ..
+   88  ls
+   89  cd src
+   90  ls
+   91  codium .
+   92  ls
+   93  cd ..
+   94  ls
+   95  cd ..
+   96  7z a responsive3.zip responsive/*
+   97  sudo mv responsive3.zip /mnt
+   98  ls
+   99  cd responsive/
+  100  ls
+  101  cd pages
+  102  ls
+  103  nano index.js
+  104  cd ..
+  105  npm run dev
+  106  ls
+  107  history >> script 
