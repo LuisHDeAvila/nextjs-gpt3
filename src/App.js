@@ -7,15 +7,15 @@ const App = () => (
     <SEO siteTitle="eleache site" title="Home" description="landing page en nextjs" />
     <div className="gradient__bg">
       <Navbar />
-      <Header />
+
     </div>
-    <Brand />
-    <WhatLanding />
     <Features />
+    {/* <Brand />
+    <WhatLanding />
     <Possibility />
     <CTA />
     <Blog />
-    <Footer />
+    <Footer /> */}
   </div>
 );
 
