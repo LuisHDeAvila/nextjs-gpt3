@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# Author: eleAche
+: '
+para usar el scrapper instala sus dependencias en este directorio
+gem install nokogiri
+gem install httparty
+'
+
 MAKE_TEMPLATE(){
 DATABASE=$(ruby ./scraper.rb)
 cat << TEMPLATE
@@ -31,4 +38,4 @@ TEMPLATE
 MAKE_TEMPLATE > ../src/containers/features/Features.jsx
 cd ../
 
-yarn dev 
+yarn dev

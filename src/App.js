@@ -14,8 +14,8 @@ const App = () => (
     <WhatLanding />
     <Possibility />
     <CTA />
-    <Blog />
-    <Footer /> */}
+    <Blog /> */}
+    <Footer />
   </div>
 );
 

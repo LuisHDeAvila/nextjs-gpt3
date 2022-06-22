@@ -3,7 +3,9 @@ import App from '../src/App';
 
 const HomePage = () => {
 	return(
-		<App />
+		<div id="root">
+			<App />
+		</div>
 	)
 }
 

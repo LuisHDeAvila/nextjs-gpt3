@@ -1,3 +1,5 @@
+# history de conversion de react a next
+
 cd src
     6  ls
     7  rm index.js 

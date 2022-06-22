@@ -5,16 +5,16 @@ require 'httparty'
 def scrapper
 
         url = "https://developer.mozilla.org/en-US/docs/Web/API"
-  unparsed = HTTParty.get(url)
-  parsed = Nokogiri::HTML(unparsed.body)
+        unparsed = HTTParty.get(url)
+        parsed = Nokogiri::HTML(unparsed.body)
 
         ############ ENUM ELEMENTS #
         apis_list = parsed.css('div.section-content')
-  apis_list = apis_list.css('li')
-  count_apis = apis_list.count
+        apis_list = apis_list.css('li')
+        count_apis = apis_list.count
         count_apis = count_apis.to_i
         counter = 0
-        puts "["
+        
         ############ GET DATA #
         while counter <= count_apis
                 byurl = apis_list.css("a")[counter]["href"]
@@ -22,18 +22,19 @@ def scrapper
                 apis_unparsed = HTTParty.get(element_url)
                 apis_parsed = Nokogiri::HTML(apis_unparsed.body)
                 apis_container = apis_parsed.css('div.section-content')
-                apis_description = apis_container.css('p').first
+                apis_description = apis_container.css('p')[1,2]
 
-                ############ MODEL #
+                ############# MODEL #
+                
                 apis = {
                         title: apis_parsed.css('h1').text,
                         text: apis_description.text,
                         url: element_url,
                 }
+                
+                # MODEL ##### OUTPUT #
                 coma = [",", ",", ",", ",", " "]
                 coma_counter = 0
-
-                ############ OUTPUT #
                 puts "{"
                 apis.each do |llave, valor|
                         valor = "#{valor}".gsub("\n","\\n")
@@ -45,11 +46,10 @@ def scrapper
                         coma_counter += 1
                 end
                 puts "},"
-                # OUTPUT ############
+                # OUTPUT #############
 
                 counter += 1
         end
-        puts "];"
 end
 
 # EXECUTE METOD SCRAPPER
